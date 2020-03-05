@@ -1,4 +1,3 @@
-//Variables
 function moveCar () {
   const car = document.getElementById('car');
   
@@ -7,17 +6,15 @@ function moveCar () {
 
   function frame () {
     if (position === 800) {
-      clearInterval(interval);
+      position = 0;
+      // clearInterval(interval);
     }
     position += 5;
     car.style.left = position + 'px';
-    console.log(car.style.left);
-    console.log(position)
   }
 }
 
 
 window.onload = (event) => {
-  console.log('page is fully loaded');
   moveCar();
 };
