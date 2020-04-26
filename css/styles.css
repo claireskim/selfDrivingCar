@@ -3,3 +3,7 @@
   width: 50%;
   position: absolute;
 }
+
+body {
+  background-color: rgb(176, 236, 237);
+}
